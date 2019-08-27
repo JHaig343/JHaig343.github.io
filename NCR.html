@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Work Term 1 Info Page | NCR -->
 <head>
 
   <meta charset="utf-8">
@@ -52,11 +52,13 @@
           <a class="nav-link js-scroll-trigger" href="#goals">Goals</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+          <a class="nav-link js-scroll-trigger" href="#hackathon">Hackathon</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+          <a class="nav-link js-scroll-trigger" href="#conclusion">Conclusion</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#acknowledgements">Acknowledgements</a> 
       </ul>
     </div>
   </nav>
@@ -66,20 +68,17 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="ncr-work-term">
       <div class="w-100">
         <h2 class="mb-5">NCR Work Term</h2>
-        <p>This was my first co-op term, started at the end of my 2nd year. I went into this work term excited to be working on production code that has a real-world impact, but also a bit apprehensive as I had never worked on a project of this scope and size before.</p>
 
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Developer Co-op</h3>
-            <div class="subheading mb-3">NCR Waterloo</div>
-            <img class="img-fluid mx-auto mb-2 " src="./img/NCRLogo.jpg" alt="">
-            <p>This was my first co-op term, started at the end of my 2nd year. <a href="">More</a></p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2019 - Present</span>
-          </div>
-        </div> -->
+        <p>NCR is an American-based financial technology company with headquarters in Atlanta, but with offices in many countries around the world such as the one in Waterloo. Originally known for developing some of the first mechanical cash registers (NCR being an acronym for National Cash Register), NCR has been at the forefront of advances in the financial technology sphere. If you've used a point-of-sale(POS) machine or a self-serve kiosk at a restaurant, chances are it was made by NCR. NCR also has invested in the financial software industry, which is the department I was working in.</p>
 
+      <h3>Role: Software Developer</h3>
+      <p>My role encompassed all aspects of working with the project codebase. This included development of new features, testing of implemented code and design and planning of upcoming development. </p>
+      <p>I was on one of multiple Agile Scrum development teams working on an upcoming software project. I joined partway through development of this project, and needed to get up to speed on what progress had been made and what needed to be done next.</p>
+
+      <p>Initial setup of my development environment took about a week, after which I began working on issues and feature development. Development was in 2-week sprints, with standups and retrospectives a regular part of the daily routine.</p>
+      <br>
+      <p>About 4 months in to the work term the existing co-op on my team left and a new co-op took his place; I became the senior co-op of the team, responsible for 'showing the ropes' and getting the new co-op student up to speed.</p>
+      <p>I appreciate the integration of testing as one of the developer's main duties - While it might be extra work, having an understanding of how tests are built and what needs to be tested is invaluable in learning how to be a better developer.</p>
       </div>
 
     </section>
@@ -89,38 +88,96 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="tech">
       <div class ="w-100">
         <h2 class="mb-5">Tech Stack</h2>
-        <p>The position advertised Java as a primary language needed for the role. Java formed the backbone of the application being developed and ran the test suites; the majority of my work was done in a domain-specific language (DSL) based on YAML files.</p>
-        <img class="img-fluid mx-auto mb-2 " src="./img/YAML_example.png" alt="">
-        <!-- TODO: file challenges comments under 'Challenges' -->
+        <p>The position advertised Java as a primary language needed for the role. Java formed the backbone of the application being developed and ran the test suites.</p>
         
-        <!-- <p>Working in a domain-specific language has its own set of challenges different from those found in more widespread languages. Documentation and implementation are limited to homegrown examples; you can't 'Google' a solution to a problem and expect to find a comprehensive answer. </p> -->
         <p>Testing was done using Cucumber: a testing framework that connects test functions to statements written in regular English. </p>
         <p>Cucumber test statements were connected to Java functions that performed the tests.</p>
-        <!-- TODO: why do I have this as a svg??!? -->
         <img class="img-fluid mx-auto mb-2 " src="./img/GHERKIN_example.svg" alt="">
         <p></p>
-        <p>Databases such as Cassandra, Redis and Elasticsearch were used to store application data.</p>
+        <p>Databases such as Cassandra, Redis and Elasticsearch were used to store application data. Continuous Integration(CI) software was used to test builds when new code was merged.</p>
 
+        <p>Docker and Kubernetes were also used as part of the project infrastructure.</p>
       </div>
     </section>
 
+    <hr class="m-0">
+    <!-- WORK IN PROGRESS -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="challenges">
       <div class="w-100">
         <h2 class="mb-5">Challenges</h2>
-        <p>Working in a domain-specific language has its own set of challenges different from those found in more widespread languages. Documentation and implementation are limited to homegrown examples; you can't 'Google' a solution to a problem and expect to find a comprehensive answer. </p> 
+        <p>One of the biggest things to adjust to when working with a large codebase developed by multiple teams is the sheer number of interconnected, moving parts. While the goal would be to have individual, modular parts working together as a whole, reality is not as neatly divided. Seemingly minor, unrelated changes to one part of the codebase can have cascading effects that cause another part to break and can take a long time to debug.</p>
+
+        <p>As my Computer Science major did not have a group project class yet(there is one in 3rd year, and the sister Software Engineering major has multiple), this was my first experience with enterprise-scale team software development. It could be a challenge to communicate with different teams on a shared project, especially when the teams have other issues on the burner as well.</p> 
+        <!-- What are you looking at? shoo! -->
+        <img class="img-fluid mx-auto mb-2" src="./img/bookcover.jpg" alt="Everyone does it, admit it.">
+
+        <p>There's a level of unpredictability that also goes beyond what you would get in academia. While dealing with the regular unexpected complexity creep and redesigning that can come with regular development, In the workplace you can get customer requests or urgent bug fixes that require sidelining your current plans. In school you rarely need to touch a project after the assignment is over, much less provide a bug fix on short notice - and class schedules don't change often without the classes' permission.</p>
       </div>
-      <!-- WORK IN PROGRESS -->
+      
     </section>
 
+    <hr class="m-0">
+    <!-- WORK IN PROGRESS -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="goals">
       <div class="w-100">
         <h2 class="mb-5">Goals</h2>
-        <div id="goalAnswer">
+        <div class="goalAnswer">
           <h4><i>Goal 1:</i> <b>Get comfortable with the Agile Development process</b> </h4>
-          <p>This is still a work in progress...</p>
+          <p>Coming in to this work term I had no experience in an Agile development environment - I had an idea of what the foundational concepts were but no experience operating in that environment.</p>
+          <p> Our work was organized into 2-week sprints. Every workday would have a standup meeting - a 10 minute meeting where each member of the team would say what they were working on and what was blocking them, if any. We would also have meetings to plan upcoming sprints and retrospectives - discussions on what went well/badly last sprint and how we could improve in the future. 
+          Agile development is a widespread methodology in the industry and I consider this to be tremendously valuable experience to bring forward in my career.
+          </p>
         </div>
-          
+        <div class="goalAnswer">
+          <h4><i>Goal 2:</i> <b>Learn how to build and maintain Kubernetes applications</b></h4>
+          <p></p><br>
+        </div>
+        <div class="goalAnswer">
+          <h4><i>Goal 3:</i> <b>Get comfortable with the Git development process</b></h4>
+            <p>I had previous experience with Git in university, but that was limited to basic operations on a single repository with a single user(me). Working with multiple large Git repositories, with over 2 dozen developers working and making changes simultaneously, is an entirely different experience and a situation that is commonplace in the industry.</p><br>
+
+            <img class="img-fluid mx-auto mb-2" src="https://imgs.xkcd.com/comics/git.png" alt="">
+            
+            <p>By the end of the work term I was completely comfortable with the regular Git workflow(fork, make changes, pull request, merge). I had also gained familiarity
+              with more one off operations, like setting a separate repository as a remote for a fork. I will say that the number of different operations you can do in Git only seems to grow as I learn more about it!
+            </p><br>
+            <!-- <p>My experience with Git was built up from just going through a regular workflow; The routine steps of development become ingrained through repetition, and you also get experience with more obscure functionality when dealing special circumstances along that workflow. By the end of the co-op term I felt more well-versed in the Git workflow then before.</p> -->
+        </div>
       </div>  
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="hackathon">
+      <div class="w-100">
+        <h2 class="mb-5">NCR Global Hackathon</h2>
+        <p>At the end of July NCR ran a global 2-day hackathon to develop new ideas for prizes. I partnered with 3 other-co-op
+          students at the Waterloo office to work outside of our normal responsibilities. We ended up developing a kiosk-type app
+          based on facial recognition, using React Native and Microsoft Azure services. Our project ended up making it to the global finals
+          among 10 other entrants.<br>
+          This was my first true hackathon and I really enjoyed it! It was definitely challenging getting a complete package done in a 2-day period.
+          I will be on the lookout for more hackathons in the future!
+        </p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="conclusion">
+      <div class="w-100">
+        <h2 class="mb-5">Conclusion</h2>
+        <h4>A conclusion will be written here once my work term has ended.</h4>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="acknowledgements">
+      <div class="w-100">
+        <h2 class="mb-5">Acknowledgements</h2>
     </section>
 
   <!-- Bootstrap core JavaScript -->
