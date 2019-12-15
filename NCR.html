@@ -124,14 +124,17 @@
         <div class="goalAnswer">
           <h4><i>Goal 1:</i> <b>Get comfortable with the Agile Development process</b> </h4>
           <p>Coming in to this work term I had no experience in an Agile development environment - I had an idea of what the foundational concepts were but no experience operating in that environment.</p>
-          <p> Our work was organized into 2-week sprints. Every workday would have a standup meeting - a 10 minute meeting where each member of the team would say what they were working on and what was blocking them, if any. We would also have meetings to plan upcoming sprints and retrospectives - discussions on what went well/badly last sprint and how we could improve in the future. 
+          <p> Our work was organized into 2-week sprints. Every workday would have a standup meeting - a 10 minute meeting where each member of the team would say what they were working on and what was blocking them, if any. Later on in the work term I gave demos of features we had worked on to demonstrate that we had met all the requirements. We would also have meetings to plan upcoming sprints and retrospectives - discussions on what went well/badly last sprint and how we could improve in the future. 
           Agile development is a widespread methodology in the industry and I consider this to be tremendously valuable experience to bring forward in my career.<br></p>
-          <p> Looking back halfway through the work term, I consider this goal to be accomplished as I came out from this work term with a concrete understanding of what are Agile processes are both in theory and in practice.</p>
+          <p> Looking back halfway through the work term, I consider this goal to be accomplished as I came out from this work term with a concrete understanding of what Agile processes are both in theory and in practice.</p>
         </div>
         <div class="goalAnswer">
           <h4><i>Goal 2:</i> <b>Learn how to build and maintain Kubernetes applications</b></h4>
-          <p>I made this goal halfway through my work term once I had gained more confidence and knowledge about my current role. I had already set up and been maintaining a Kubernetes cluster for development; I wanted to get experience in designing and creating the clusters in addition to maintaining them.</p><br>
-          <p>Kubernetes as a system is actually pretty straightforward. It's all about working with pods, which are a collection of containers(Docker or otherwise) grouped together as a logical unit that performs a specific task. These pods are run on nodes, which are physical or virtual machines acting as hosts for these container groups. Multiple nodes, controlled and organized by a master node, make up a Kubernetes cluster. There are also other concepts such as deployments, essentially reusable blueprints and configurations for building pods, which allows identical duplicate pods to be spun up or shut down when needed.</p>
+          <p>I made this goal halfway through my work term once I had gained more confidence and knowledge about my current role.</p> 
+          <p>I had already set up and been maintaining a Kubernetes cluster as my development environment since the start of the work term. The cluster contained multiple pods interacting on many levels, so diagnosing problems was not a straightforward process and relies alot on prior experience with similar errors.<br></p>
+          <p>Determining and fixing the cause of an issue however gives good insight into how the different systems of the cluster interact with each other. Debugging a cluster error also really ingrains useful Kubernetes processes(checking pod logs, <code>kubectl describe</code>-ing a pod to get error messages) and a methodical approach to tackling unknown issues.</p><br>
+          <p>The initial setup of my development environment lasted about a week. I found this to be too long, so during the work term I tried different ways to decrease the time needed to spin up a dev environment. I created an OVA archive of a working cluster and used that to assist in onboarding. The OVA file proved to be a bit ponderous and difficult to update, so I experimented with using Vagrant to make a sharable config file that could boot a development cluster. By the end of my work term I had created a dev VM for each member of my team that didn't have one, and reduced the full setup time to around 2 days.</p>
+          <p>I met less success in building a Kubernetes application - The business architecture was already mostly complete so there was not much opportunity to build something new with business value. The daily operations of maintaining a dev cluster and experimenting with cluster setup is valuable real-world experience with Kubernetes, so I consider this goal complete, and look forward to working more with Kubernetes in future jobs.</p>
           <img class="img-fluid mx-auto mb-2" src="img/docker-diagram.jpeg" title="a good diagram for a basic, one-node Kubernetes cluster">
           <p></p>
         </div>
@@ -140,9 +143,9 @@
             <p>I had previous experience with Git in university, but that was limited to basic operations on a single repository with a single user (me). Working with multiple large Git repositories, with over 2 dozen developers working and making changes simultaneously, is an entirely different experience and a situation that is commonplace in the industry.</p><br>
 
             <img class="img-fluid mx-auto mb-2" src="https://imgs.xkcd.com/comics/git.png" title="I still don't trust myself to use rebase">
-            
+            <p>I worked with multiple Git repositories covering different aspects of the codebase. The repositories were shared across the different teams so there was a high traffic of commits - I regularly resolved merge conflicts between my local changes and upstream updates. Sometimes I needed changes from commits another team member had made - I added my team member's forks as remotes to pull commits when needed and encouraged the rest of my team to do the same.</p>
             <p>By midway through the work term I was completely comfortable with the regular Git workflow(fork, make changes, pull request, merge). I had also gained familiarity
-            with more one off operations, like setting a separate repository as a remote for a fork. I consider this goal to be achieved. I will say that the number of different operations you can do in Git only seems to grow as I learn more about it!
+            with more one off operations, like setting a separate repository as a remote for a fork or resetting while keeping the reset changes. I consider this goal to be achieved. I will say that the number of different operations you can do in Git only seems to grow as I learn more about it!
             </p><br>
         </div>
         <div class="goalAnswer">
@@ -150,7 +153,8 @@
           <p>A goal created midway through the work term, as I recognized I had a weakness in efficiently explaining technical situations and the reasoning behind some of my code changes. I often went into too much detail or didn't use concise terminology for explaining code, which made getting my idea across take much longer than it should have. Improving this has become a priority for me - The importance of being able to effectively communicate with your co-workers on issues can't be overstated.</p><br>
           
           <p>Around this time a new co-op student joined my team - I considered this the perfect opportunity to work on technical communication. Explaining a concept to someone without the background experience is an excellent way to test your understanding and find areas in which you can improve.</p> <br>
-          <p>I didn't expect to be able to call this goal fully complete - improving is a continuous process. I do feel however that I hsve made progress on that this work term.</p>
+          <p>Near the end of the work term I investigated on speeding up the setup of development environments using Vagrant, and demoed what I had created to the team. It was an excellent experience in 'selling' an improved methodology or new software - first explaining the problem, then demonstrating how the software solves that problem.</p>
+          <p>I didn't expect to be able to call this goal fully complete - improving is a continuous process. I do feel however that I have made progress on that this work term.</p>
         </div>
         <div class="goalAnswer">
           <h4><i>Goal 5:</i> Become familiar with Agile Development tools</h4>
@@ -170,6 +174,8 @@
           <p>This was my first true hackathon and I really enjoyed it! It was definitely challenging getting a complete package done in a 2-day period.
           I will be on the lookout for more hackathons in the future!
         </p>
+        <img class="img-fluid mx-auto mb-2" src="./img/face-api.png" title="Azure Face API">
+        <img class="img-fluid mx-auto mb-2" src="./img/react.png" title="React Native">        
       </div>
     </section>
 
@@ -181,7 +187,8 @@
     <section class="resume-section-main p-3 p-lg-5 d-flex justify-content-center" id="conclusion">
       <div class="w-100">
         <h2 class="mb-5">Conclusion</h2>
-        <p>There were a couple of big takeaways I got from the past 8 months. Collaboration and communication skills are essential. When working on a new task or issue, thoroughly researching and understanding the problem is way more effective than blindly jumping into code. Last but not least, having an efficient and organized infrastructure and workflow is vital for any large-scale development.</p><br>
+        <p>There were a couple of big takeaways I got from the past 8 months. Collaboration and communication skills are essential. When working on a new task or issue, thoroughly researching and understanding the problem is way more effective than blindly jumping into code. Last but not least, having an efficient and organized infrastructure and workflow is vital for any large-scale development.</p>
+        <p>I would like to thank my team - Birinder, Atishay, Nidhi, Mitchell, Charlie and Marlon - for being so supportive and willing to help out when I had questions or when I got stuck. I would especially like to thank my team lead Jarrett, who was quite posssibly the best team lead a first-term co-op could have - incredibly receptive to my ideas and supportive of my work term goals. I would also like to thank Kamran who was an excellent teacher for the first 4 months.</p>
         <p>Overall this work term has been an eye-opening experience for me in terms of discovering not only how software development works in the workplace, but how my skills translate to the workplace as well. The working experience in tech like Docker and Kubernetes is very valuable going forward.</p><br>
       </div>
     </section>
