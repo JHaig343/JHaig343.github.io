@@ -170,6 +170,7 @@ section.resume-section {
   max-width: 85%;
 }
 
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -177,6 +178,9 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+  }
+  section.work-term {
+    min-height: 80vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
