@@ -62,14 +62,21 @@
     <section class="resume-section work-term p-3 p-lg-5 d-flex justify-content-center" id="camis-work-term">
       <div class="w-100">
           <h2 class="mb-5">Camis Work Term</h2>
-              <p>This was my third and last work term, starting in Janurary and going 8 months until August.
-              This work term was notable for being entirely virtual despite the company's Guelph office - I did all
-              all of my work working from home.</p>
-              <p>Camis provides parks and campground software for different parks and natural resource organizations
-              in both Canada and the United States. They are a 'full solution' provider - providing the public-facing
-              reservation website, the in-park management and analytics software suite, and any hardware or resources needed
-              to support these applications, including call-center support.</p>
-              <p>Their application was very much fu</p>
+          <p>This was my third and last work term, starting in Janurary and going 8 months until August.
+          This work term was notable for being entirely virtual despite the company's Guelph office - I did all
+          all of my work working from home.</p>
+          <p>Camis provides parks and campground software for different parks and natural resource organizations
+          in both Canada and the United States. They are a 'full solution' provider - providing the public-facing
+          reservation website, the in-park management and analytics software suite, and any hardware or resources needed
+          to support these applications, including call-center support.</p>
+          <h3>Role: Software Developer</h3>
+          <p>I was part of one of a few software development teams that build and maintain the reservation website and park
+          software. Nominally each team was responsible for a specific domain of the software - sales, analytics etc. - But work would be
+          shifted between teams where priority or capacity required it.</p>
+          <p>The development process was slightly different from previous places I've worked at - Camis teams follow a more regular Kanban approach,
+          with no regular development intervals like sprints being used. Instead, you have a regular flow of tickets being added to the kanban board
+          (from discovery meetings, bug reports) and developers take tickets off of the Ready pile when they have capacity. The only development timeline
+          was releases - certain tickets and epics are slotted to be complete for certain releases.</p>         
       </div>
 
     </section>
@@ -85,6 +92,7 @@
         <p>The in-park application was .NET  - a WPF frontend interface (with XAML pages) with business logic
         written in C#, and relational SQL Server backend. The reservation website also had a .NET backend, but used
         Angular for the frontend UI.</p>
+        <p>The Camis codebase adhered to Clean Code architecture principles, which (TODO: explain Clean architecture) </p>
         </div>
     </section>
 
@@ -96,7 +104,13 @@
         my team completely online. My immediate concern was onboarding and getting my development environment set up - In
         previous co-ops my experience was that getting set up could be a hard process that greatly benefitted from the institutional
         knowledge that a team could provide, which could be harder in an online environment.</p>
-
+        <p>Fortunately I found the setup process to be quite straightforward and without many issues - I was able to get the application up and running
+        and start contributing by my third day of work without any major issues. I attribute some of this success to my previous work term experience - some
+        tools like Jira I was already familiar with, and I had more experience in troubleshooting the setup process and asking the right questions than I did
+        at my first work term.</p>
+        <p>A separate challenge that was present throughout the work term was keeping up to date on the status of other developers on your team and the status of what they were working on. 
+          
+        </p>
       </div>
 
     </section>
@@ -108,12 +122,25 @@
         <h2 class="mb-5">Goals</h2>
         <div class="goalAnswer">
           <h4><i>Goal 1:</i> <b>Write an SQL query or database-interaction part of the application.</b> </h4>
+          <p>I created this goal when I learned more about the database backend that Camis uses for their application.
+          In previous work terms the development teams I was on did not regularly interact with the application database - that
+          was something that had already been established by the time I joined the team. At Camis dev teams are able to write SQL stored
+          procedures when building features, so I wanted to capitalize on the opportunity to get some experience working with databases.</p>
          </div>
         <div class="goalAnswer">
           <h4><i>Goal 2:</i> <b>Write/help design a UI element of the application</b></h4>
+          <p>I made this goal at the start of the work term. Camis maintains two separate frontends - one for the in-park application that
+          uses Windows Presentation Foundation(WPF) through XAML files, and one for the reservation website that uses Angular.</p>
+          <p>I got quite alot of experience writing Angular components during an internal hackathon that was run in February. My team built a Google Maps
+          integration that would embed Google Maps into the reservation website, and I helped to build the embedded Angular component. Angular is (something)</p>
+          <p>On the desktop side I worked on a number of components in WPF (Windows Presentation Foundation) - this used XAML files as the UI markup, paired with C# classes that linked UI
+            actions (eg. Button presses, dropdown selections) to the business logic. XAML is not altogether too different from HTML, in that both are XML-based markup languages. One difference
+            is that you can design custom components (similar to frameworks like React and Angular) and use those within your other XAML files. </p>
           </div>
         <div class="goalAnswer">
           <h4><i>Goal 3:</i> <b>Update a component of the application to have full test coverage</b></h4>
+          <p>I made this goal at the start of the work term, once I had some understanding of the codebase's testing structure. Camis has unit tests for individual code components,
+          integration tests for groups of components that perform certain business logic, and end-to-end tests for some main reservation workflows (mainly on the website side). I wanted to have a practical goal to accomplish in this test environment - writing a full test suite from scratch was unlikely considering the mature position of the current test setup, so I thought achieving full test coverage would be attainable, useful for me as work experience and useful for Camis in improving their test quality.</p>
         </div>
         <div class="goalAnswer">
         </div>
@@ -122,7 +149,7 @@
       </div>
     </section>
 
-    <hr class="m-0"
+    <hr class="m-0">
 
 
     <hr class="m-0">
