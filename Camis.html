@@ -93,7 +93,8 @@
         written in C#, and relational SQL Server backend. The reservation website also had a .NET backend, but used
         Angular for the frontend UI.</p>
         <p>The Camis codebase adhered to Clean Code architecture principles, which (TODO: explain Clean architecture) </p>
-        <p>I found C# to be very similar to Java in many ways, and overall was a very nice language to work in - </p>
+        <p>I found C# to be very similar to Java in many ways, and overall was a very nice language to work in - I found some language features like 
+        LINQ queries to be really natural and easy to use.</p>
         </div>
     </section>
 
@@ -112,7 +113,6 @@
         <p>A separate challenge that was present throughout the work term was keeping up to date on the status of other developers on your team and the status of what they were working on. 
           There is much less opportunity to 'overhear' conversations between other developers or get information on the progress of work indirectly
           - you have to use direct methods, such as standup meetings or directly asking a developer to get information on a ticket's progress. 
-
         </p>
       </div>
 
@@ -151,12 +151,31 @@
           integration tests for groups of components that perform certain business logic, and end-to-end tests for some main reservation workflows (mainly on the website side). I wanted to have a practical goal to accomplish in this test environment - writing a full 
           test suite from scratch was unlikely considering the mature position of the current test setup,
           so I thought achieving full test coverage would be attainable, useful for me as work experience and useful for Camis in improving their test quality.</p>
+          <p>The Camis application uses <a href="https://nunit.org/">NUnit</a> for its unit tests. NUnit is very similar to JUnit in terms of structure and operation, so I didn't have much
+          trouble getting accustomed to it.</p>
+          <p>An important feature of unit tests is that they test an isolated component of the codebase. This rule becomes tricky when trying to test a component that uses many dependencies; As soon
+            as you pass in a full dependency to your test suite it no longer can be called a unit test, becoming more like an integration test. 
+            To solve this, you must 'mock' the dependency, setting up a faked component that returns a preset response that you then pass to the component being tested. For .NET codebases, a common framework
+            that automates mocking for you is <a href="https://github.com/Moq/moq4/wiki/Quickstart">Moq</a>.</p>
+            <p>Once I understood how unit tests in .NET land worked, getting a component to full test coverage was relatively simple. Creating pull requests automatically ran a SonarQube scan that would analyze test coverage and notify you of common code smells. I also utilized IDE tools that allowed me to determine test coverage locally.
+            </p>
+            <p>I consider this goal to be complete as I wrote multiple components that were calculated to have 100% test coverage. I also learned alot about the test ecosystem of .NET applications, which I consider to be the most important outcome from this goal.</p>
         </div>
         <div class="goalAnswer">
           <h4><i>Goal 4:</i> Take an active role in collecting/analyzing application performance metrics</h4>
+          <p>I made this goal halfway through the workterm, once I had gotten more familiar with the metrics analysis process my team used to gauge application performance.</p>
+          <p>The Camis application stores logs and performance metrics in Azure Application Insights, which generates dashboards teams can use to monitor performance metrics such as request
+          successes and failures, response time and payload size, and more. Every other Friday my team would have a meeting where we would go over these dashboards for various parts of the application and look for any failures or outlying requests. </p>
+          <p>Unfortunately I did not make too much progress on this goal. I did get some practice looking into Azure Application Insights dashboards - these were visual graphs and data tables that presented key metrics from the application. Dashboards had been setup for the different parts of the application (in-park software, website etc.) measuring metrics such as load time for different pages, the number of successful and failed API calls, and some sales metrics like what products were sold recently at each park. Ahead of our weekly metrics meetings I would look ahead at these dashboards and see if I saw anything out of the ordninary - a large amount of failed requests, extremely long average load times and other red flags. I would then flag these issues in a Slack comment chain.</p>
+          <p>Unfortunately I did not get to the point of providing actionable guidance beyond just identifying issues - I did feel I had the required experience with the system to diagnose
+          performance issues, and I became busy with development initiatives near the end of my work term.</p>
         </div>
         <div class="goalAnswer">
-          <h4><i>Goal 5:</i> Improve pair-programming practices within the team (?)</h4>
+          <h4><i>Goal 5:</i> Write / improve upon the codebase's technical documentation.</h4>
+          <p>I made this goal halfway through the workterm, once I had a better understanding of the project's structure and existing documentation. Project documentation is only useful if it is accurate and up-to-date; otherwise, it is more harmful than having no documentation at all. I considered updating documentation to be a good goal to work on when in-between development work.</p>
+          <p>Unforutnately I ended up not making too much progress on this goal. When our team briefly contributed to an upcoming mobile application, I made a setup doc that outlined the 
+          steps needed to set up a local dev environment to work with the project. Documentation is only useful if it is up-to-date; otherwise it can be worse than having no documentation at all! To address this, I periodically asked some senior devs who maintained the mobile project to take a look at the document and let me know if any of the setup steps had changed. I would also ask new devs to follow the setup guide and let me know if there were any steps that behaved differently or didn't work.</p>
+          <p>Beyond this documentation maintenance I didn't make any progress on other pieces of technical documentation - I got caught up in other development initiatives and didn't find the time to get back to this goal.</p>
         </div>
       </div>
     </section>
@@ -169,6 +188,10 @@
     <section class="resume-section work-term p-3 p-lg-5 d-flex justify-content-center" id="conclusion">
       <div class="w-100">
         <h2 class="mb-5">Conclusion</h2>
+        <p>Overall I found this work term experience to be very rewarding. I gained development experience in a tech stack I had never worked with before (.NET) and got to develop in both
+        desktop and web applications through the C# desktop app and the Angular web app. All of this was done using industry-standard Agile practices and tools (Jira, Confluence etc.)</p>
+        <p>Beyond regular work, Camis actively provided opportunities for developers to learn new skills - weekly tech meetings provided opportunities to ask the principal developers about technology and decisions behind the Camis codebase, and a hackathon at the start of the year let me work deeply with an Angular codebase.</p>
+        <p>My team was an absolute pleasure to work with - they were never hesitant to help me with any development issues I came across and had a really positive team environment that made work really enjoyable. I want to thank everyone on Sale squad who made the work term great - Andrew and Sheeja were great senior devs that provided alot of guidance, Ali was an amazing software analyst and always a friendly face, and Ian was a great project manager who always knew how to keep the team on track. Amninder provided alot of front-end experience, and Thomas and Aracelli were great project managers when Ian was away. You all made the experience at Camis amazing!</p>
       </div>
     </section>
 
